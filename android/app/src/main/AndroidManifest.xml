@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,6 +10,9 @@
       android:allowBackup="false"
       android:theme="@style/AppTheme"
       android:supportsRtl="true">
+      <meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="AIzaSyCv7u9SPL_H5mC1BWXe8f1CxAex18dAC9s" /> 
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
